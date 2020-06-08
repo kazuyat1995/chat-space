@@ -2,13 +2,13 @@
   .side-header
     .side-header__box
       .side-header__box__user-name 
-        高橋
+        = current_user.name
       .side-header__box__icons
         .side-header__box__icons__new-group
           = link_to "#" do
             = icon("far", "edit")
         .side-header__box__icons__edit-user
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             = icon("fas", "cog")
   .groups
     .group
