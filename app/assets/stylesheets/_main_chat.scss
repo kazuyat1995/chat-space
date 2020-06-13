@@ -94,17 +94,17 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    .new-message{
+    
+    &__input{
       display: flex;
-      .input-box{
+      &--text{
+        height: 50px;
+        padding: 0 40px 0 10px;
+        border-style: none;
         width: 100%;
+      }
+      .input-box{
         position: relative;
-        &__text{
-          height: 50px;
-          padding: 0 40px 0 10px;
-          border-style: none;
-          width: 100%;
-        }
         &__image{
           position: absolute;
           top:10px;
