@@ -38,6 +38,14 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  #RSpecを利用するため
+  gem 'rspec-rails', '~> 3.5'
+  #簡単にダミーのインスタンスを作成することができる
+  gem 'factory_bot_rails'
+  #コントローラのテストに必要なgem
+  gem 'rails-controller-testing'
+  #emailや電話番号、名前などのダミーデータを作成するためのGem
+  gem 'faker'
 end
 
 group :development do
@@ -62,4 +70,5 @@ gem 'pry-rails'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
 
