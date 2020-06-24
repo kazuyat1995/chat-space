@@ -74,7 +74,6 @@ $(function(){
 
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得   
     var last_message_id = $('.message:last').data("message-id");
-    // console.log(last_message_id);
     $.ajax({
       //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
       url: "api/messages",
@@ -86,7 +85,6 @@ $(function(){
     })
     .done(function(messages){
       if (messages.length !== 0) {
-        // console.log('success');
         //追加するHTMLの入れ物を作る
         var insertHTML = '';
         //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる

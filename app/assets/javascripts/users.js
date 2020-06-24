@@ -9,7 +9,6 @@ $(function(){
             　 `
     //作ったhtmlを入れる
     $("#user-search-result").append(html);
-    // console.log(html)
   }
 
   //一致するユーザーがいなかった場合の処理
@@ -21,7 +20,6 @@ $(function(){
               `
     //作ったhtmlを入れる
     $("#user-search-result").append(html);
-    // console.log(html)
   }
   function addDeleteUser(name, id) {
     let html = `
@@ -56,7 +54,6 @@ $(function(){
     })
     
       .done(function(users){
-        // console.log(users);
       //if,else if,elseどの場合においても、処理後は、すでに検索欄に出力されている情報を削除する。
         $("#user-search-result").empty();
       //検索に一致するユーザーが０じゃない場合(いる場合)
@@ -81,7 +78,6 @@ $(function(){
 
   // 追加ボタンを押した際の処理
   $(document).on("click", ".chat-group-user__btn--add", function() {
-    // console.log("イベントの発火の成功")
     //クリックされたところのデータを取得し各変数に代入
     const userName = $(this).attr("data-user-name");
     const userId = $(this).attr("data-user-id");
