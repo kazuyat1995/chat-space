@@ -13,7 +13,7 @@ pid "#{app_path}/tmp/pids/unicorn.pid"
 #ポート番号を指定
 listen 3000
 
-#エラーのログを記録するファイルを指定
+#エラーのログを記録するファイルを指定/Unicorn関係で起きたエラーをlog/unicorn.stderr.log」に記録するという指
 stderr_path "#{app_path}/log/unicorn.stderr.log"
 
 #通常のログを記録するファイルを指定
