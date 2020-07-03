@@ -46,6 +46,11 @@ group :development, :test do
   gem 'rails-controller-testing'
   #emailや電話番号、名前などのダミーデータを作成するためのGem
   gem 'faker'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
